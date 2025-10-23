@@ -1,1 +1,16 @@
 .Rproj.user
+^.*\.Rproj$
+^\.Rproj\.user$
+^data-raw$
+^data_pretrained_fforms$
+^logo$
+^cran-comments\.md$
+^\.travis\.yml$
+^revdep$
+^README\.Rmd$
+^README-.*\.png$
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+^cran-comments\.md$
