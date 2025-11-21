@@ -15,7 +15,7 @@ ui <- fluidPage(
   theme = shinytheme("flatly"),
   useShinyjs(),
   
-  # Bootstrap Icons CDN
+  # Bootstrap Icons 
   tags$head(
     tags$link(
       rel = "stylesheet",
@@ -99,7 +99,7 @@ server <- function(input, output, session) {
     
     if (ext != "pdf") {
       removeModal()
-      showNotification("❌ This link does not return a valid PDF!", type = "error")
+      showNotification("This link does not return a valid PDF!", type = "error")
       req(FALSE)
     }
     
@@ -116,7 +116,7 @@ server <- function(input, output, session) {
     pdf$pdfPath <- temp
     
     removeModal()
-    showNotification("✅ PDF downloaded successfully!", type = "message")
+    showNotification("PDF downloaded successfully!", type = "message")
   })
   
 #### ---- Show PDF in Viewer ----
@@ -141,7 +141,7 @@ server <- function(input, output, session) {
     
     if (length(tables_list) == 0) {
       removeModal()
-      showNotification("⚠️ No tables found on the specified pages.", type = "warning")
+      showNotification("No tables found on the specified pages.", type = "warning")
       return(NULL)
     }
     
@@ -157,7 +157,7 @@ server <- function(input, output, session) {
     current$current <- combined_df
     
     removeModal()
-    showNotification("✅ Tables extracted successfully!", type = "message")
+    showNotification("Tables extracted successfully!", type = "message")
   })
   
 #### ---- Show Extracted Table ----
@@ -176,3 +176,4 @@ server <- function(input, output, session) {
 
 #### ---- Run App ----
 shinyApp(ui, server)
+
