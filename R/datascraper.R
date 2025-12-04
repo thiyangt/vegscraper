@@ -2,9 +2,9 @@
 #'
 #'@param input_dir location of the folder where you have daily reports
 #'@param out_dir location of the folder where you need to save the outputs
-#'@return
+#'@return tidy datasets
 #'
-#'
+#'@export
 datascraper <- function(input_dir, output_dir){
 
   # Get list of all CSV files

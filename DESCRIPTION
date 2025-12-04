@@ -1,11 +1,23 @@
-Package: vegscrapr
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Package: Web Scrapping Daily Vegetable Prices From Daily Price Reports
+Title: 
+Version: 0.0.1
 Authors@R: 
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
 Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: 
 Encoding: UTF-8
+Imports:
+    shiny,
+    ggplot2,
+    dplyr,
+    data.table,
+    rhandsontable,
+    shinyjs,
+    shinythemes,
+    httr,
+    pdftools,
+    stringr,
+    purrr,
+    fs
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
