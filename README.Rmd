@@ -1,0 +1,33 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# vegscraper
+
+
+
+## Installation
+
+You can install the development version of vegscraper from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("thiyangt/vegscraper")
+```
+
+To load the app
+
+```r
+vegscraper::run_app()
+```
