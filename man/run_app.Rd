@@ -2,10 +2,25 @@
 % Please edit documentation in R/run_app.R
 \name{run_app}
 \alias{run_app}
-\title{Run the Shiny App}
+\title{Launch Shiny Application}
 \usage{
 run_app(...)
 }
-\description{
+\arguments{
+\item{...}{Additional arguments passed to \code{shiny::runApp()}.}
+}
+\value{
+The Shiny app is launched; no R object is returned.
 Run the Shiny App
+}
+\description{
+This function launches the Shiny application included in the
+\strong{vegscraper} package. The app must be located in
+\verb{inst/app/} within the package source. When installed, this
+directory is available via \code{system.file()}.
+}
+\examples{
+\dontrun{
+  run_app()
+}
 }

@@ -1,7 +1,9 @@
 #' Extract data from daily price reports published by the Central Bank, Sri Lanka
 #'
 #'@param input_dir location of the folder where you have daily reports
-#'@param out_dir location of the folder where you need to save the outputs
+#'@param output_dir location of the folder where you need to save the outputs
+#'@importFrom utils read.csv
+#'@importFrom utils write.table
 #'@return tidy datasets
 #'
 #'@export

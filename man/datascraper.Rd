@@ -9,7 +9,7 @@ datascraper(input_dir, output_dir)
 \arguments{
 \item{input_dir}{location of the folder where you have daily reports}
 
-\item{out_dir}{location of the folder where you need to save the outputs}
+\item{output_dir}{location of the folder where you need to save the outputs}
 }
 \value{
 tidy datasets
